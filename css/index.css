@@ -145,94 +145,6 @@ nav {
     }
 }
 
-/* @media screen and (max-width: 375px) {
-    body {
-        overflow-x: hidden;
-    }
-    .nav-links {
-        position: absolute;
-        right: -2px;
-        top: 8vh;
-        background-color: #2797ed;
-        opacity: 0.5;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        width: 15%;
-        transform: translateX(100%);
-        border-radius: 90px 0 0 90px;
-    }
-    .nav-links li {
-        opacity: 0;
-    }
-
-    .nav-links li a {
-        font-size: 9px;    
-    }
-
-    .burger {
-        display: block;
-        padding-right: 30px;
-    }
-
-    .image-container {
-        grid-template-columns: 1fr;
-    }
-
-    h1 {
-        font-size: 30px;
-        line-height: 1.2;
-    }
-
-    h2 {
-        font-size: 13px;
-        line-height: 1.3;
-    }
-
-    p.par1 {
-        font-size: 4px;
-        line-height: 2;
-        padding-left: 4px;
-    }
-
-    .logo h4 {
-        font-size: 20px;
-        padding-left: 40px;
-    }
-
-    .define-image img {
-        width: 15%;
-        padding-left: 15px;
-    }
-
-    .strategy-image img {
-        width: 15%;
-        padding-left: 15px;
-    }
-
-    .build-image img {
-        width: 15%;
-        padding-left: 15px;
-    }
-
-    .link-start p {
-        font-size: 10px;
-    }
-    
-    .link-start .link-row {
-        background-color: rgb(255, 255, 255);
-        height: 30px;
-        width: 40%;
-        margin-bottom: 20px;
-    }
-
-    .image-container p {
-        font-size: 10px;
-        line-height: 1.8;
-    }
-} */
-
 @media screen and (max-width: 375px) {
     .login {
         width: 45%;
@@ -249,7 +161,6 @@ nav {
         padding-right: 20px;
         text-decoration: none;
         white-space: pre;
-
     }
 
     .link-start .link-row p {
@@ -266,7 +177,6 @@ nav {
         line-height: 2;
         padding-left: 4px;
     }
-
 }
 
 @media screen and (max-width: 768px) {
