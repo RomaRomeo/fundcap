@@ -1,0 +1,293 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    max-width: 980px;
+    margin: auto;
+    background-image: url("../img/abstraktsiia-fon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 32px;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.01em;
+    color: white;
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 8px;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
+.section {
+    position: relative;
+    padding-top: 270px;
+    padding-bottom: 120px;
+}
+
+.section.main-1s {
+    padding-top: 3vh;
+    padding-bottom: 40px;
+    color: #32254c;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px;
+    padding-bottom: 90px;
+    background-color: white;
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.define-image img {
+    width: 20%;
+    padding-left: 15px;
+}
+
+.strategy-image img {
+    width: 20%;
+    padding-left: 15px;
+}
+
+.build-image img {
+    width: 20%;
+    padding-left: 15px;
+}
+
+.image-container p {
+    margin: 20px;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.section.main-2s {
+    color: #100d1f;
+    background-color: #dfe4ed;
+    position: relative;
+    top: -275px;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    max-width: 980px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.logo h4 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.nav-links li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px){
+    .nav-links {
+        width: 60%;
+    }
+
+    .image-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        top: 8vh;
+        background-color: #2797ed;
+        opacity: 0.5;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 15%;
+        transform: translateX(100%);
+        border-radius: 90px 0 0 90px;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+
+    .image-container {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p.par1 {
+        font-size: 10px;
+    }
+
+    .define-image img {
+        width: 10%;
+        padding-left: 15px;
+    }
+
+    .strategy-image img {
+        width: 10%;
+        padding-left: 15px;
+    }
+
+    .build-image img {
+        width: 10%;
+        padding-left: 15px;
+    }
+
+}
+
+.nav-active {
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+}
+
+@keyframes navLinkFade {
+    from  {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.login {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 50px;
+}
+
+.login li {
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.login a {
+    text-decoration: none;
+    color: white;
+}
+
+.get-started-btn {
+    border: 1px solid white;
+    padding: 5px 30px 5px 30px;
+    white-space: nowrap;
+}
+
+.row1 {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    padding-left: 65px;
+}
+
+.par1 {
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.container-platform {
+    max-width: 720px;
+}
+
+.link-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 70px;
+    width: 31%;
+    margin-bottom: 40px;
+}
+
+.link-start {
+    color: #32254c;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
